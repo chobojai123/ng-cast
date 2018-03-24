@@ -13,10 +13,11 @@ angular.module('video-player')
       method: 'GET',
       url: 'https://www.googleapis.com/youtube/v3/search',
       params: options
-    }).then(function success(params){
-        callback(params.items)
-      }, function error (params){
-          console.log("Error", params)
+    }).then(function success(response){
+      console.log(response);
+        callback(response.data.items)
+      }, function error (response){
+          console.log("Error", response)
          });
   }
   // TODO
