@@ -5,9 +5,5 @@ angular.module('video-player')
     onClick: '<',
     videos: '<'
   },
-  controller: function(){
-
-  },
-
   templateUrl: 'src/templates/videoList.html'
 });

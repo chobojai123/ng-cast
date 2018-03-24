@@ -6,8 +6,7 @@ angular.module('video-player')
     result: '<'
   },
   controller: function(){
-    this.result = function(){
-    }
+
   },
   templateUrl: 'src/templates/search.html'
 });
